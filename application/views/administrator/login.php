@@ -13,7 +13,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?= base_url('admin') ?>"><b>Alura</b> Pet Shop</a>
+    <a href="<?= base_url('admin') ?>"><b>Alura</b> Shop</a>
   </div>
   <div class="card">
     <div class="card-body login-card-body">

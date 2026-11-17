@@ -39,7 +39,7 @@ class produk_controller extends CI_Controller {
     private function __simpan_produk() {
         $data = [
             'nama' => $this->input->post('nama_produk'),
-            'kategori_id' => $this->input->post('kategori_produk'),
+            'id_kategori' => $this->input->post('kategori_produk'),
             'harga' => $this->input->post('harga_produk'),
             'stok' => $this->input->post('stok_produk'),
             'deskripsi' => $this->input->post('deskripsi_produk')
@@ -123,7 +123,7 @@ class produk_controller extends CI_Controller {
     private function __ubah_produk($id) {
         $data = [
             'nama' => $this->input->post('nama_produk'),
-            'kategori_id' => $this->input->post('kategori_produk'),
+            'id_kategori' => $this->input->post('kategori_produk'),
             'harga' => $this->input->post('harga_produk'),
             'stok' => $this->input->post('stok_produk'),
             'deskripsi' => $this->input->post('deskripsi_produk')

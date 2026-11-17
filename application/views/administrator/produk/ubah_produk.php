@@ -45,7 +45,7 @@
                                     <select name="kategori_produk" id="kategori_produk" class="form-control">
                                         <option value="">-- Pilih Kategori --</option>
                                         <?php foreach ($list_kategori as $kategori) : ?>
-                                            <option value="<?= $kategori['id_kategori'] ?>" <?= set_value('kategori_produk', $produk['kategori_id']) == $kategori['id_kategori'] ? 'selected' : '' ?>>
+                                            <option value="<?= $kategori['id_kategori'] ?>" <?= set_value('kategori_produk', $produk['id_kategori']) == $kategori['id_kategori'] ? 'selected' : '' ?>>
                                                 <?= $kategori['nama'] ?>
                                             </option>
                                         <?php endforeach ?>

@@ -71,7 +71,7 @@ CREATE TABLE `produk` (
   `id_produk` int NOT NULL,
   `nama` varchar(100) NOT NULL,
   `deskripsi` text,
-  `kategori_id` int NOT NULL,
+  `id_kategori` int NOT NULL,
   `harga` int NOT NULL,
   `stok` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -80,7 +80,7 @@ CREATE TABLE `produk` (
 -- Dumping data untuk tabel `produk`
 --
 
-INSERT INTO `produk` (`id_produk`, `nama`, `deskripsi`, `kategori_id`, `harga`, `stok`) VALUES
+INSERT INTO `produk` (`id_produk`, `nama`, `deskripsi`, `id_kategori`, `harga`, `stok`) VALUES
 (3, 'BAJU', 'pakaian baju cewe', 3, 100000, 2);
 
 -- --------------------------------------------------------
@@ -124,7 +124,7 @@ ALTER TABLE `kategori`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id_produk`),
-  ADD KEY `kategori_id` (`kategori_id`);
+  ADD KEY `id_kategori` (`id_kategori`);
 
 --
 -- Indeks untuk tabel `produk_gambar`
@@ -169,7 +169,7 @@ ALTER TABLE `produk_gambar`
 -- Ketidakleluasaan untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  ADD CONSTRAINT `produk_ibfk_1` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id_kategori`);
+  ADD CONSTRAINT `produk_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`);
 
 --
 -- Ketidakleluasaan untuk tabel `produk_gambar`

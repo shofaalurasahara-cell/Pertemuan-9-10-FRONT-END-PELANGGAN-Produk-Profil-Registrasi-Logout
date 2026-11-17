@@ -49,6 +49,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="<?= base_url('administrator/ongkir2422500011') ?>" class="nav-link <?= ($this->uri->segment(2) == 'kategori') ? 'active' : '' ?>">
+                              <i class="far fa-circle nav-icon"></i>
+                              <p>Ongkir</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="<?= base_url('administrator/produk') ?>" class="nav-link <?= ($this->uri->segment(2) == 'produk') ? 'active' : '' ?>">
                               <i class="far fa-circle nav-icon"></i>
                               <p>Produk</p>

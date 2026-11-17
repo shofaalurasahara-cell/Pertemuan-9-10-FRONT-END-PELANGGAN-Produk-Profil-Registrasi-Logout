@@ -9,7 +9,7 @@ class Admin_dashboard_controller extends CI_Controller {
     }
 
     public function index() {
-        $data['title'] = 'Alura Pet Shop';
+        $data['title'] = 'Alura Shop';
         $this->load->view('administrator/templates/header', $data);
         $this->load->view('administrator/templates/sidebar');
         $this->load->view('administrator/dashboard');

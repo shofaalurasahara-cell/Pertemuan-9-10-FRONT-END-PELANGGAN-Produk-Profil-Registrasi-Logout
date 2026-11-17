@@ -59,7 +59,7 @@ class kategori_controller extends CI_Controller {
                 ');
             }
 
-        redirect('admin/kategori');
+        redirect('administrator/kategori');
     }
 
     public function hapus_kategori($id) {
@@ -85,7 +85,7 @@ class kategori_controller extends CI_Controller {
                     </div>
                     ');
                 }
-                    redirect('admin/kategori');
+                    redirect('administrator/kategori');
 
         } 
 
@@ -98,7 +98,7 @@ class kategori_controller extends CI_Controller {
             </div>
             ');
 
-            redirect('admin/kategori');
+            redirect('administrator/kategori');
         }
     }
 
@@ -128,7 +128,7 @@ class kategori_controller extends CI_Controller {
                 </div>
             </div>
             ');
-            redirect('admin/kategori');
+            redirect('administrator/kategori');
         }
     }
 
@@ -153,6 +153,6 @@ class kategori_controller extends CI_Controller {
             ');
         }
 
-        redirect('admin/kategori');
+        redirect('administrator/kategori');
     }
 }
